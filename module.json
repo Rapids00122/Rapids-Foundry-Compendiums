@@ -1,31 +1,23 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "",
-  "version": "#{VERSION}#",
+  "id": "rapids-foundry-compendiums",
+  "title": "Rapids Foundry Compendiums",
+  "description": "Private module for my foundry server",
+  "version": "1.0.0",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
   "compatibility": {
-    "minimum": 10,
-    "verified": 10,
-    "maximum": 11
+    "minimum": 12,
+    "verified": 13
   },
   "authors": [
     {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "Rapids",
+      "url": "hhttps://github.com/Rapids00122",
+      "discord": "rapids12"
     }
   ],
-  "relationships": {
-    "systems": [],
-    "requires": []
-  },
   "esmodules": [
     "scripts/module.js"
-  ],
-  "scripts": [
-    "scripts/lib/lib.js"
   ],
   "styles": [
     "styles/module.css"
@@ -37,15 +29,23 @@
       "path": "languages/en.json"
     }
   ],
-  "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
-  "license": "LICENSE",
-  "readme": "README.md",
-  "media": [
+  "packs": [
     {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
+      "name": "rapids-server-monsters",
+      "label": "Rapid's Server Monsters",
+      "path": "packs/rapids-server-monsters",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
     }
-  ]
+  ],
+  "url": "https://github.com/Rapids00122/Rapids-Foundry-Compendiums",
+  "manifest": "https://github.com/Rapids00122/Rapids-Foundry-Compendiums/releases/latest/download/module.json",
+  "download": "https://github.com/Rapids00122/Rapids-Foundry-Compendiums/releases/latest/download/rapids-foundry-compendiums.zip",
+  "license": "LICENSE",
+  "readme": "README.md"
 }
